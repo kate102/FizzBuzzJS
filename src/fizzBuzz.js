@@ -28,3 +28,7 @@ FizzBuzz.prototype.isDivisibleByFifteen = function (number) {
     return false;
   }
 }
+
+FizzBuzz.prototype.play = function (number) {
+  if (this.isDivisibleByThree(number)) {return "fizz"} else {return number}
+}

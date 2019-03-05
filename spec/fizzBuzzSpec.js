@@ -16,4 +16,12 @@ describe('FizzBuzz', function() {
       expect(fizzbuzz.isDivisibleByFifteen(15)).toBe(true);
     });
   });
+
+  describe('returns fizz/buzz/fizzbuzz/number depending on input', function() {
+    it('returns fizz if divisible by 3', function() {
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.play(3)).toBe("fizz");
+    })
+
+  });
 });
