@@ -19,3 +19,12 @@ FizzBuzz.prototype.isDivisibleByFive = function (number) {
     return false;
   }
 }
+
+FizzBuzz.prototype.isDivisibleByFifteen = function (number) {
+  if ( number % 15 == 0 ){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
