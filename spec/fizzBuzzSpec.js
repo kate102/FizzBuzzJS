@@ -22,6 +22,10 @@ describe('FizzBuzz', function() {
       fizzbuzz = new FizzBuzz();
       expect(fizzbuzz.play(3)).toBe("fizz");
     })
+    it('returns buzz if divisible by 5', function() {
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.play(5)).toBe("buzz");
+    })
 
   });
 });
