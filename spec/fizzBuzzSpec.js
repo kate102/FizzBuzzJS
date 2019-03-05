@@ -30,6 +30,9 @@ describe('FizzBuzz', function() {
       fizzbuzz = new FizzBuzz();
       expect(fizzbuzz.play(15)).toBe("fizzbuzz");
     })
-
+    it('returns itself if not divisible by 3, 5 or 15', function() {
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.play(7)).toBe(7);
+    })
   });
 });
